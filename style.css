@@ -20,10 +20,12 @@ html, body {
 /* header as background image (replace 'header.jpg' with your local file) */
 header {
 	min-height: 220px;
-	background-image: url('header.jpg');
+	background-image: url('src/Kuba.jpg');
+	/* ensure the whole image is visible (no cropping) */
 	background-position: center;
-	background-size: cover;
 	background-repeat: no-repeat;
+	background-size: contain; /* show the full image without cutting */
+	background-color: var(--color1); /* fallback behind image */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
