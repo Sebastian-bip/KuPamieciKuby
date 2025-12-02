@@ -14,26 +14,19 @@ html, body {
 	font-family: var(--font1);
 	display: flex;               /* everything in one vertical column */
 	flex-direction: column;
-	align-items: stretch;        /* full width column items */
+	align-items: center;        /* full width column items */
 }
 
-/* header as background image (replace 'header.jpg' with your local file) */
-header {
-	min-height: 220px;
-	background-image: url('src/Kuba.jpg');
-	/* ensure the whole image is visible (no cropping) */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain; /* show the full image without cutting */
-	background-color: var(--color1); /* fallback behind image */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	padding: 28px 16px;
-	box-shadow: inset 0 -20px 40px rgba(0,0,0,0.15);
+img {
+	max-width: 22%;
+	height: auto;
+	border-radius: 12px;
+	margin: 12px 44% ;
+	display: block;
+	position: relative;
 }
+
+
 
 /* h2 uses kolor 2 and font2 */
 h2 {
@@ -47,6 +40,7 @@ div{
     font-size: 1rem;
     color: #333333;
     line-height: 1.6;
+	position: relative;
 }
 
 /* main content area (keeps layout in single column) */
@@ -56,6 +50,7 @@ section {
 	margin: 12px auto;
 	padding: 12px;
 	box-sizing: border-box;
+	position: relative;
 }
 
 /* footer with fade-in animation and light blue background */
@@ -73,6 +68,7 @@ footer {
 	font-family: var(--font3);
 	color: #08314f;
 	border-top: 1px solid rgba(0,0,0,0.04);
+	position: relative;
 }
 
 /* Optional small responsive tweaks */
