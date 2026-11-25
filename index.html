@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ku pamięci przyjaciela</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Strona poświęcona pamięci Kuby — ostatnie słowa i wspomnienia od przyjaciół.">
+  <title>Ku pamięci przyjaciela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&family=Lora:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Ostatnie słowa do przyjaciela</h1>
+  <header class="memorial-header">
+    <p class="dedication">Ku pamięci przyjaciela</p>
+    <h1>Ostatnie słowa do przyjaciela</h1>
+    <div class="divider" aria-hidden="true">
+      <span class="divider-mark"></span>
+    </div>
+    <figure class="portrait-frame">
+      <img src="src/Kuba.jpg" alt="Zdjęcie Kuby" width="1080" height="1334">
+      <figcaption class="portrait-caption">Kuba</figcaption>
+    </figure>
+  </header>
 
-        <img src="src/Kuba.jpg" alt="Zdjęcie Kuby">
-    </header>
-    <section class="seba">
-        <h2>Sebastian</h2>
-        <div>Zawsze chcielśmy wspólnie z Kubą stworzyć grę gdy nauczymy się programować. Najbardziej żałuję tego jak mało czasu razem spędziliśmy ostatnimi latami. Niech spoczywa w pokoju.</div>
-    </section>
+  <main class="memories" aria-label="Wspomnienia przyjaciół">
+    <article class="memory seba" id="wspomnienie-sebastian" tabindex="0">
+      <h2>Sebastian</h2>
+      <p>Zawsze chcielśmy wspólnie z Kubą stworzyć grę gdy nauczymy się programować. Najbardziej żałuję tego jak mało czasu razem spędziliśmy ostatnimi latami. Niech spoczywa w pokoju.</p>
+    </article>
 
-    <section class="tymek">
-        <h2>Tymoteusz</h2>
-        <div>Choć Kubę znałem, krótko to czułem to mój drugi brat. Można było pogadać o wszystkim, pośmiać się z głupot, patrzeć na inne dziewczyny i marzyć o przyszłości. Szkoda że nie mogę wiecej z nim wypić piwa pod mostem. Spoczywaj w pokoju Kubuś.</div>
-    </section>
+    <article class="memory tymek" id="wspomnienie-tymoteusz" tabindex="0">
+      <h2>Tymoteusz</h2>
+      <p>Choć Kubę znałem, krótko to czułem to mój drugi brat. Można było pogadać o wszystkim, pośmiać się z głupot, patrzeć na inne dziewczyny i marzyć o przyszłości. Szkoda że nie mogę wiecej z nim wypić piwa pod mostem. Spoczywaj w pokoju Kubuś.</p>
+    </article>
 
-    <section class="lera">
-        <h2>Lera</h2>
-        <div>pamiętam ten daleki 2023 i to jak bardzo byłam zakochana w tobie, nigdy nie odważyłam się cię przytulić, nigdy nie odważyłam się ci powiedzieć o swoich uczuciach, ale byłeś zawsze największym moim wsparciem, mam ogromną nadzieję że tam jest ci o wiele lepiej niż tu, że patrzysz na nas z góry i jesteś dumny że wszyscy jako tako dajemy sobie radę ze stratą ciebie.Spoczywaj w pokoju Kubuś</div>
-    </section>
+    <article class="memory lera" id="wspomnienie-lera" tabindex="0">
+      <h2>Lera</h2>
+      <p>pamiętam ten daleki 2023 i to jak bardzo byłam zakochana w tobie, nigdy nie odważyłam się cię przytulić, nigdy nie odważyłam się ci powiedzieć o swoich uczuciach, ale byłeś zawsze największym moim wsparciem, mam ogromną nadzieję że tam jest ci o wiele lepiej niż tu, że patrzysz na nas z góry i jesteś dumny że wszyscy jako tako dajemy sobie radę ze stratą ciebie.Spoczywaj w pokoju Kubuś</p>
+    </article>
 
-    <section class="piter">
-        <h2>Piotrek</h2>
-        <div>Kiedy w 2024 roku poznałem Kubę, nie przypuszczałem, że w tak krótkim czasie ktoś będzie w stanie zmienić moje podejście do życia. Pokazał mi, że relacje z innymi mogą być pełne wzajemnego zainteresowania. Nasze rozmowy i wspólne wyjścia, nawet te najkrótsze, sprawiały że każdy dzień stawał się lepszy. Potrafiliśmy się po prostu przejść po mieście i rozmawiać na spontanie o wszystkim i o niczym. Dzięki niemu zrozumiałem, że można znaleźć wspólny język z drugim człowiekiem nawet jeśli przez długi czas myślało się że to nierealne. Do każdej wspólnie spędzonej razem chwili wracam z ogromnym sentymentem, szczególnie teraz, w rocznice większości wydarzeń. Choć fizycznie Cię z nami nie ma, to wiem że to co wniosłeś do naszego życia pozostanie z nami na zawsze.</div>
+    <article class="memory piter" id="wspomnienie-piotrek" tabindex="0">
+      <h2>Piotrek</h2>
+      <p>Kiedy w 2024 roku poznałem Kubę, nie przypuszczałem, że w tak krótkim czasie ktoś będzie w stanie zmienić moje podejście do życia. Pokazał mi, że relacje z innymi mogą być pełne wzajemnego zainteresowania. Nasze rozmowy i wspólne wyjścia, nawet te najkrótsze, sprawiały że każdy dzień stawał się lepszy. Potrafiliśmy się po prostu przejść po mieście i rozmawiać na spontanie o wszystkim i o niczym. Dzięki niemu zrozumiałem, że można znaleźć wspólny język z drugim człowiekiem nawet jeśli przez długi czas myślało się że to nierealne. Do każdej wspólnie spędzonej razem chwili wracam z ogromnym sentymentem, szczególnie teraz, w rocznice większości wydarzeń. Choć fizycznie Cię z nami nie ma, to wiem że to co wniosłeś do naszego życia pozostanie z nami na zawsze.</p>
+    </article>
+  </main>
 
-    </section>
-
-    <footer>Stronę wykonał Sebastian Kramarz</footer>
-
-    <script src="skrypt.js"></script> 
+  <footer class="memorial-footer">
+    <p>Stronę wykonał Sebastian Kramarz</p>
+  </footer>
 </body>
 </html>
